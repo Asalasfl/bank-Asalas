@@ -49,5 +49,5 @@ jobs:
         with:
           app-name: 'bank-Asalas'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_03AF870F7007404681448E8A12D9DB69 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_215BC229C34145C3A9E67E44C0817B67 }}
           package: '*.jar'
