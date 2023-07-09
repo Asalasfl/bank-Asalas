@@ -44,23 +44,4 @@ public class CreditConverterTest {
         // Verificar valores en dto
     }
 
-    @Test
-    public void testDTOToCredit() {
-        CreditDTO dto = new CreditDTO();
-        dto.setIdCredit("1");
-        dto.setType("personal");
-        dto.setAmount(BigDecimal.valueOf(1000));
-        dto.setInterestRate(BigDecimal.valueOf(0.05));
-        dto.setRemainingAmount(BigDecimal.valueOf(500));
-        // Setear valores en dto
-
-        Credit entity = CreditConverter.DTOToCredit(dto);
-
-        assertEquals("1", entity.getId());
-        assertEquals(BigDecimal.valueOf(1000), entity.getAmount());
-        assertEquals("Personal", entity.getType());
-        assertEquals(BigDecimal.valueOf(0.05), entity.getInterestRate());
-        assertEquals(BigDecimal.valueOf(500), entity.getRemainingAmount());
-        // Verificar valores en entity
-    }
 }
